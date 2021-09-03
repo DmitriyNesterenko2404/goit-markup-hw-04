@@ -175,12 +175,14 @@ img {
 /*----------------Шапка-------------*/
 .hero {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
 
   background-color: rgba(196, 196, 196, 1);
-  background-image: url(../imagis/hero/hero-overlay.png),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../imagis/hero/hero-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -244,6 +246,9 @@ img {
 }
 .peculiarities-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -251,7 +256,6 @@ img {
 }
 
 .peculiarities-link .icon {
-  margin: auto;
   width: 70px;
   height: 70px;
 }
@@ -469,6 +473,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-contacts {
@@ -605,6 +610,8 @@ img {
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--main-titel-color);
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
 .produkt-list {
@@ -638,8 +645,8 @@ img {
   margin-bottom: 0;
 }
 
-.produkt-item:hover,
-.produkt-item:focus {
+.produkt-box:hover,
+.produkt-box:focus {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
